@@ -54,6 +54,14 @@ const listingSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    width: {
+      type: Number, // Add this field for land listings
+      required: false, // Adjust the required condition based on your use case
+    },
+    length: {
+      type: Number, // Add this field for land listings
+      required: false, // Adjust the required condition based on your use case
+    },
   },
   { timestamps: true }
 );
